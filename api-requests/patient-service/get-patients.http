@@ -1,0 +1,31 @@
+### GET request to get all patients
+GET http://localhost:4004/api/patients
+Authorization: Bearer {{token}}
+
+### POST request to get all patients
+POST http://localhost:4000/patients
+Content-Type: application/json
+
+{
+  "address": "123 main street 22",
+  "dateOfBirth": "1995-09-20",
+  "email": "Kafka_test12@example.com",
+  "name": "John Doe with Billing kakfa",
+  "registeredDate": "2025-09-28"
+}
+
+### POST request to get all patients
+PUT http://localhost:4000/patients/f7514a7c-b8dc-49c8-b0cd-a1d9ee623a6c
+Content-Type: application/json
+
+{
+"name": "John Doe",
+"email": "Test2@example.com",
+"address": "123 main street",
+"dateOfBirth": "1995-09-09"
+}
+
+### Delete request to get all patients
+DELETE http://localhost:4000/patients/123e4567-e89b-12d3-a456-426614174004
+
+
